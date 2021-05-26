@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/rumble/static/css/main.f1c7fc95.chunk.css",
+    "main.js": "/rumble/static/js/main.0c9cf3db.chunk.js",
+    "main.js.map": "/rumble/static/js/main.0c9cf3db.chunk.js.map",
+    "runtime-main.js": "/rumble/static/js/runtime-main.284a97be.js",
+    "runtime-main.js.map": "/rumble/static/js/runtime-main.284a97be.js.map",
+    "static/js/2.9ee0e013.chunk.js": "/rumble/static/js/2.9ee0e013.chunk.js",
+    "static/js/2.9ee0e013.chunk.js.map": "/rumble/static/js/2.9ee0e013.chunk.js.map",
+    "static/js/3.1fcfbf4f.chunk.js": "/rumble/static/js/3.1fcfbf4f.chunk.js",
+    "static/js/3.1fcfbf4f.chunk.js.map": "/rumble/static/js/3.1fcfbf4f.chunk.js.map",
+    "index.html": "/rumble/index.html",
+    "static/css/main.f1c7fc95.chunk.css.map": "/rumble/static/css/main.f1c7fc95.chunk.css.map",
+    "static/js/2.9ee0e013.chunk.js.LICENSE.txt": "/rumble/static/js/2.9ee0e013.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.284a97be.js",
+    "static/js/2.9ee0e013.chunk.js",
+    "static/css/main.f1c7fc95.chunk.css",
+    "static/js/main.0c9cf3db.chunk.js"
+  ]
+}
