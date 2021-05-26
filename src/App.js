@@ -52,6 +52,18 @@ const App = () => {
         }
     }
 
+    const displayTodo = () => {
+        let listItems = document.querySelectorAll('.check');
+
+        for (var i = 0; i < listItems.length; i++) {
+            if (listItems[i].classList.contains('todo')) {
+                listItems[i].parentElement.parentElement.style.display = 'block';
+            } else {
+                listItems[i].parentElement.parentElement.style.display = 'none';
+            }
+        }
+    }
+
 
     return (
         <div id="content">
@@ -68,7 +80,7 @@ const App = () => {
 
                 <button id="all" className="hover" autoFocus={true} onClick={displayAll}> All</button>
 
-                <button id="todo" className="hover" >To-do </button>
+                <button id="todo" className="hover" onClick={displayTodo}>To-do </button>
 
                 <button id="completed" className="hover">Completed</button>
 
