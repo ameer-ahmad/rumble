@@ -1,25 +1,48 @@
-import logo from './logo.svg';
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+const App = () => {
+    return (
+        <div id="content">
+
+
+        <h1 id="title">Rumble - To do list</h1>
+        <div id="box">
+
+            <div id="task">
+                <input type="text" placeholder="Add a task..." id="question" required maxlength="50" novalidate />
+                <button id="add">+</button>
+            </div>
+
+            <div id="category">
+
+                <button id="all" class="hover" autofocus> All</button>
+
+                <button id="todo" class="hover">To-do </button>
+
+                <button id="completed" class="hover">Completed</button>
+
+            </div>
+
+
+
+            <ul id="list">
+                <li>
+                    <label>
+                        <input type="checkbox" class="check todo" />
+                        Pass interaction design navigation
+                    </label>
+                    <span class="delete">X</span></li>
+
+
+
+
+
+            </ul>
+
+        </div>
+
     </div>
-  );
+    )
 }
 
 export default App;
