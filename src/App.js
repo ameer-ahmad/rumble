@@ -19,7 +19,7 @@ const App = () => {
         let checked = document.querySelectorAll('.check');
         let deleteItem = document.querySelectorAll('.delete');
 
-        for (var i = 0; i < checked.length; i++) {
+        for (let i = 0; i < checked.length; i++) {
             checked[i].onclick = function() {
                 if (this.checked === true) {
                     this.parentElement.style.textDecoration = 'line-through';
@@ -35,7 +35,7 @@ const App = () => {
             }
         }
 
-        for (var i = 0; i < deleteItem.length; i++) {
+        for (let i = 0; i < deleteItem.length; i++) {
             deleteItem[i].onclick = function() {
               this.parentElement.parentElement.removeChild(this.parentElement);
             }
@@ -76,6 +76,12 @@ const App = () => {
         }
     }
 
+    const handleSubmit = (e) => {
+        if (e.key === "Enter") {
+            document.getElementById("add").click();
+        }
+    }
+
 
     return (
         <div id="content">
@@ -84,7 +90,7 @@ const App = () => {
         <div id="box">
 
             <div id="task">
-                <input type="text" placeholder="Add a task..." id="question" required maxLength="50" noValidate value={task} onChange={(e) => {setTask(e.target.value)}} />
+                <input type="text" placeholder="Add a task..." id="question" required maxLength="50" noValidate value={task} onChange={(e) => {setTask(e.target.value)}} onKeyUp={handleSubmit} />
                 <button id="add" onClick={addTask}>+</button>
             </div>
 
