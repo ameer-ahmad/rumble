@@ -64,6 +64,18 @@ const App = () => {
         }
     }
 
+    const displayCompleted = () => {
+        let listItems = document.querySelectorAll('.check');
+
+        for (var i = 0; i < listItems.length; i++) {
+            if (listItems[i].classList.contains('completed')) {
+                listItems[i].parentElement.parentElement.style.display = 'block';
+            } else {
+                listItems[i].parentElement.parentElement.style.display = 'none';
+            }
+        }
+    }
+
 
     return (
         <div id="content">
@@ -82,7 +94,7 @@ const App = () => {
 
                 <button id="todo" className="hover" onClick={displayTodo}>To-do </button>
 
-                <button id="completed" className="hover">Completed</button>
+                <button id="completed" className="hover" onClick={displayCompleted}>Completed</button>
 
             </div>
 
