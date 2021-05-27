@@ -219,11 +219,10 @@ ul > li {
 
 #list {
     display: inline-block;
-    width: 540px;
+    width: 85%;
     text-align: left;
     font-family: 'Muli', sans-serif;
     font-weight: 300;
-    margin-right: 55px;
     line-height: 2.5;
     font-size: 19px;
     color: #9E9E9F;
@@ -232,10 +231,13 @@ ul > li {
 
 
 
-
 li {
     border-bottom: 1px solid #3A3C40;
+    display: flex;
+    justify-content: space-between;
 }
+
+
 
 li label:hover {
     cursor: pointer;

@@ -8,7 +8,7 @@ const App = () => {
 
     const addTask = () => {
         let li = document.createElement('li');
-        li.innerHTML = `<label><input type='checkbox' class='check todo'>&nbsp; ${task} </label> <span class='delete'>X</span>`;
+        li.innerHTML = `<label><input type='checkbox' class='check todo'>&nbsp;&nbsp;<span id="tasks">${task}</span>  </label> <span class='delete'>X</span>`;
         if (task !== "") {
             document.getElementById('list').appendChild(li);
             setTask("");
@@ -18,16 +18,17 @@ const App = () => {
     const listHandler = () => {
         let checked = document.querySelectorAll('.check');
         let deleteItem = document.querySelectorAll('.delete');
+        let task = document.getElementById("tasks");
 
         for (let i = 0; i < checked.length; i++) {
             checked[i].onclick = function() {
                 if (this.checked === true) {
-                    this.parentElement.style.textDecoration = 'line-through';
+                    task.style.textDecoration = 'line-through';
                     this.parentElement.style.color = '#606368';
                     this.classList.remove('todo');
                     this.classList.add('completed');
                 } else {
-                    this.parentElement.style.textDecoration = 'none';
+                    task.style.textDecoration = 'none';
                     this.parentElement.style.color = '#A1A1A1';
                     this.classList.remove('completed');
                     this.classList.add('todo');
