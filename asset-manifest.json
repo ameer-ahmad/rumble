@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/rumble/static/css/main.81d9f179.chunk.css",
-    "main.js": "/rumble/static/js/main.5117eb2a.chunk.js",
-    "main.js.map": "/rumble/static/js/main.5117eb2a.chunk.js.map",
+    "main.js": "/rumble/static/js/main.100ed7d2.chunk.js",
+    "main.js.map": "/rumble/static/js/main.100ed7d2.chunk.js.map",
     "runtime-main.js": "/rumble/static/js/runtime-main.284a97be.js",
     "runtime-main.js.map": "/rumble/static/js/runtime-main.284a97be.js.map",
     "static/js/2.9ee0e013.chunk.js": "/rumble/static/js/2.9ee0e013.chunk.js",
@@ -17,6 +17,6 @@
     "static/js/runtime-main.284a97be.js",
     "static/js/2.9ee0e013.chunk.js",
     "static/css/main.81d9f179.chunk.css",
-    "static/js/main.5117eb2a.chunk.js"
+    "static/js/main.100ed7d2.chunk.js"
   ]
 }
